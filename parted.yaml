@@ -1,0 +1,8 @@
+- name: Correct partitions exist on /dev/vdb
+parted:
+device: /dev/vdb
+state: present
+number: "{{ item.number }}"
+part_start: "{{ item.start }}"
+part_end: "{{ item.end }}"
+loop: "{{ partitions }}"
