@@ -7,6 +7,12 @@
     yum:
     name: httpd
     status: present
+  - name: latest version of httpd and firewalld installed
+    yum:
+    name:
+     - httpd
+     - firewalld
+    state: latest    
   - name: second task
     service:
     name: httpd
@@ -18,3 +24,9 @@
     service:
     name: mariadb
     enabled: true
+  - name: latest version of httpd and firewalld installed
+    yum:
+    name:
+      - httpd
+      - firewalld
+    state: latest
