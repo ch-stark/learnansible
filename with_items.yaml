@@ -1,0 +1,10 @@
+vars:
+  data:
+  - user0
+  - user1
+  - user2
+tasks:
+  - name: "with_items"
+    debug:
+      msg: "{{ item }}"
+    with_items: "{{ data }}"
