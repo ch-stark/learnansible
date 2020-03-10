@@ -1,20 +1,20 @@
 ---
 # This is a simple playbook with two plays
 - name: first play
-hosts: web.example.com
-tasks:
-- name: first task
-yum:
-name: httpd
-status: present
-- name: second task
-service:
-name: httpd
-enabled: true
+  hosts: web.example.com
+  tasks:
+  - name: first task
+    yum:
+    name: httpd
+    status: present
+  - name: second task
+    service:
+    name: httpd
+    enabled: true
 - name: second play
-hosts: database.example.com
-tasks:
-- name: first task
-service:
-name: mariadb
-enabled: true
+  hosts: database.example.com
+  tasks:
+  - name: first task
+    service:
+    name: mariadb
+    enabled: true
