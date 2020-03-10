@@ -43,3 +43,7 @@ ansible all -m copy -a 'content="Managed by Ansible\n" dest=/etc/motd' -u devops
 
 
 https://docs.ansible.com/ansible/2.3/playbooks_blocks.html
+
+
+reviewing also:
+https://github.com/openshift-kni/baremetal-deploy/blob/master/ansible-ipi-install
