@@ -37,3 +37,6 @@ internetweb
 
 
 
+
+ansible -m user -a 'name=newbie uid=4000 state=present' servera.lab.example.com
+
