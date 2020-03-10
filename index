@@ -47,3 +47,17 @@ https://docs.ansible.com/ansible/2.3/playbooks_blocks.html
 
 reviewing also:
 https://github.com/openshift-kni/baremetal-deploy/blob/master/ansible-ipi-install
+
+
+[servers1]
+demo1.example.com
+demo2.example.com
+[servers2]
+demo3.example.com
+demo4.example.com
+[servers:children]
+servers1
+servers2
+[servers:vars]
+user=joe
+
