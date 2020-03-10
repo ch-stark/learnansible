@@ -1,0 +1,12 @@
+- hosts: all
+  vars:
+  user: cstark
+  home: /home/cstark
+- hosts: all
+  vars_files:
+  - vars/users.yml
+
+
+#users.yml
+user: joe
+home: /home/joe
