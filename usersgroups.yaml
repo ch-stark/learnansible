@@ -2,9 +2,9 @@
   user:
     name: "{{ item.name }}"
     state: present
-  groups: "{{ item.groups }}"
+    groups: "{{ item.groups }}"
   loop:
    - name: jane
-     groups: wheel
+     group: wheel
    - name: joe
-     groups: root
+     group: root
