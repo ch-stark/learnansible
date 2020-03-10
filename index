@@ -40,3 +40,6 @@ internetweb
 
 ansible -m user -a 'name=newbie uid=4000 state=present' servera.lab.example.com
 ansible all -m copy -a 'content="Managed by Ansible\n" dest=/etc/motd' -u devops --become
+
+
+https://docs.ansible.com/ansible/2.3/playbooks_blocks.html
