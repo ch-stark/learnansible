@@ -25,5 +25,15 @@ with_file:
 
 
 
+[me]
+localhost
+[intranetweb]
+servera.lab.example.com
+[internetweb]
+serverb.lab.example.com
+[web:children]
+intranetweb
+internetweb
+
 
 
