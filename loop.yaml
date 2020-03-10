@@ -1,0 +1,15 @@
+- name: Services are running
+  service:
+    name: "{{ item }}"
+    state: started
+  loop:
+    - postfix
+    - email
+   
+- name: Service
+  service:
+    name= "{{ item }}"
+    state: started
+  loop:
+    - postfix
+    - email
