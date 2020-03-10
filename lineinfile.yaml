@@ -1,0 +1,10 @@
+- name: /etc/hosts is up to date
+  hosts: datacenter-west
+  remote_user: automation
+  become: yes
+  tasks:
+  - name: server.example.com in /etc/hosts
+    lineinfile:
+      path: /etc/hosts
+      line: '192.0.2.42 server.example.com server'
+      state: present
