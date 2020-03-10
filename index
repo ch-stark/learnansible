@@ -61,3 +61,11 @@ servers2
 [servers:vars]
 user=joe
 
+
+
+- name: Fact dump
+  hosts: all
+  tasks:
+    - name: Print all facts
+      debug:
+      var: ansible_facts
