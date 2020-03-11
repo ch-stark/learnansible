@@ -4,7 +4,7 @@
   tasks:
     - name: Print all facts
       debug:
-      var: ansible_facts 
+        var: ansible_facts 
     - name: Prints various Ansible facts
       debug:
         msg: >
