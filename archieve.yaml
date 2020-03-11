@@ -1,0 +1,4 @@
+# Compress directory /path/to/foo/ into /path/to/foo.tgz
+- archive:
+    path: /path/to/foo
+    dest: /path/to/foo.tgz
