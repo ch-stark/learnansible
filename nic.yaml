@@ -1,0 +1,8 @@
+- name: NIC configuration
+  nmcli:
+    conn_name: ens4-conn
+    ifname: ens4
+    type: ethernet
+    ip4: 172.25.250.30/24
+    gw4: 172.25.250.1
+  state: present
